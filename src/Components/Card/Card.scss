@@ -1,0 +1,91 @@
+$blueColor : rgb(59, 176, 209);
+$blueColorOpacity : rgba(59, 177, 209, 0.8); 
+$greenColor : rgb(59, 209, 84);
+$greenColorOpacity : rgba(59, 209, 84, 0.8);
+$redColor : rgb(217, 59, 59);
+$redColorOpacity : rgba(217, 59, 59, 0.8);
+$blackColor : rgb(43, 41, 41);
+$blackColorOpacity : rgba(43, 41, 41, 0.8);
+
+$cl-white: rgba(255, 255, 255, 0.95);
+$cl-whiteOpacity: rgba(255, 255, 255, 0.9);
+
+$h3-padding : 15px 0;
+$h1-padding : 50px 0;
+$h4-padding : 15px 0;
+$h5-padding : 10px;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.column{
+    max-width: 260px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid white;
+    background-color: black;
+    opacity: 1;
+    margin: 20px 0;
+    transition: 0.3s;
+    &:hover{
+        -webkit-box-shadow: 1px 15px 15px -10px rgba(91, 121, 144, 0.56);
+        -moz-box-shadow: 1px 15px 15px -10px rgba(91, 121, 144, 0.56);
+        box-shadow: 1px 15px 15px -10px rgba(91, 121, 144, 0.56);
+        margin-bottom: 30px;
+    }
+    h3,h1{
+        color: white;
+        transition: 0.3s;
+    }
+    h3{
+        padding: $h3-padding;
+    }
+    h1{
+        padding: $h1-padding;
+    }
+    h4{
+        background-color: $cl-white;
+        padding: $h4-padding;
+    }
+    h5{
+        background-color: $cl-whiteOpacity;
+        padding: $h5-padding;
+    }
+}
+.blue{
+    h3{
+        background-color: $blueColorOpacity;
+    }
+    h1{
+        background-color: $blueColor;
+    }
+}
+.green{
+    h3{
+        background-color: $greenColorOpacity;
+    }
+    h1{
+        background-color: $greenColor;
+    }
+}
+.red{
+    h3{
+        background-color: $redColorOpacity;
+    }
+    h1{
+        background-color: $redColor;
+    }
+}
+.black{
+    h3{
+        background-color: $blackColorOpacity;
+    }
+    h1{
+        background-color: $blackColor;
+    }
+}
